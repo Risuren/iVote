@@ -1,0 +1,5 @@
+# Prevent PHP execution in uploads directory — security hardening
+<FilesMatch "\.(php|php3|php4|php5|phtml|pl|py|cgi)$">
+    Deny from all
+</FilesMatch>
+Options -Indexes
